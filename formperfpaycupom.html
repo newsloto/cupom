@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>aguarde...</title>
+<style>
+	p {
+  		font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 30pt;
+	}
+}
+</style>
+	
+<script>
+window.onload = () => {
+    let pageLinks = document.querySelectorAll('a');
+		    pageLinks.forEach(elem => {
+        let href = elem.href;
+				if (href === undefined || href.indexOf("#") >= 0 || href.indexOf("api.whatsapp") >= 0) return true;
+				let search_params = document.location.search.replace('?', '');
+				elem.href = href + (href.indexOf("?") > 0 ? '&' : '?') + search_params.toString();
+		    });
+	
+		var urlParams = new URLSearchParams(window.location.search);		
+		
+		window.location.href= 'https://go.perfectpay.com.br/PPU38CK4CG8' + '?src=' + urlParams.get('src');
+	    }
+</script>
+
+</head>
+
+<body>
+<br><br><br><br>
+<center>
+	<p>Carregando, Aguarde...</p>
+</center>
+</body>
+</html>
