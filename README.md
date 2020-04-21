@@ -1,1 +1,1 @@
-# cupom
+# https://newsloto.github.io/cupom/
